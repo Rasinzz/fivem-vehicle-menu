@@ -5,7 +5,7 @@ A simple vehicle menu in which you can spawn, upgrade, and delete vehicles.
 - [vein (GUI)](https://github.com/warxander/vein)
 
 ## Preview
-![vehicle-menu](https://user-images.githubusercontent.com/88259422/173255535-bac5bbfc-b4c5-4c46-89c2-b8646a8e6393.png)
+![vehicle-menu](https://user-images.githubusercontent.com/88259422/173255922-7a5beda8-fdfa-4004-93be-d63bb1647e0d.png)
 
 ## Getting Started
 - Download and place into `resources/` directory
