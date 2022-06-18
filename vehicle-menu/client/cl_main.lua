@@ -101,6 +101,7 @@ local function showVehicleMenu()
 
             if vein:button('Apply Upgrades') then
                 upgradeVehicle(GetVehiclePedIsIn(PlayerPedId(), false))
+                isWindowOpened = false
             end
 
             if vein:button('Delete Vehicle') then
