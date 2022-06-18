@@ -3,6 +3,11 @@ local controlWidth = 0.133
 local labelWidth = 0.1
 local isChecked = false
 
+local function fixVehicle(vehicle)
+    SetVehicleEngineHealth(vehicle, 1000)
+    SetVehicleFixed(vehicle)
+end
+
 local function upgradeVehicle(vehicle)
     local modTypes = {11, 12, 13, 15, 16}
 
@@ -89,6 +94,11 @@ local function showVehicleMenu()
         vein:endRow()
 
         vein:beginRow()
+            if vein:button('Fix Vehicle') then
+                fixVehicle(GetVehiclePedIsIn(PlayerPedId(), false))
+                isWindowOpened = false
+            end
+
             if vein:button('Apply Upgrades') then
                 upgradeVehicle(GetVehiclePedIsIn(PlayerPedId(), false))
             end
